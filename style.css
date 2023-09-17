@@ -64,7 +64,7 @@ header .hero-text {
 
 .s-cards .s-card {
   background-color: var(--light-magenta);
-  border-radius: 20px;
+  border-radius: 10px;
   padding: 16px;
 }
 
@@ -140,6 +140,14 @@ header .hero-text {
     margin-top: 150px;
   }
 
+  body::before {
+    content: ' ';
+    background: url(./images/bg-pattern-top-desktop.svg) no-repeat;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+
   header {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -196,5 +204,25 @@ header .hero-text {
   .l-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    height: 300px;
+    gap: 40px;
+  }
+
+  .l-cards .l-card p {
+    font-size: 1.5em;
+    font-weight: 400;
+  }
+
+  .l-cards .l-card:nth-of-type(1) {
+    margin-bottom: 40px;
+  }
+
+  .l-cards .l-card:nth-of-type(2) {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .l-cards .l-card:nth-of-type(3) {
+    margin-top: 40px;
   }
 }
